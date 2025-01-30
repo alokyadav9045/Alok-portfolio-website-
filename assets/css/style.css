@@ -668,7 +668,18 @@ header .navbar ul li a:hover {
 .work .box-container .box img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit:fill;
+}
+.work .box-container .box video {
+  height: 100%;
+  width: 100%;
+  object-fit:fill;
+  transition: 0.3s;
+  transform: scale(1);
+  cursor: pointer;
+  transition: 0.3s;
+  
+  
 }
 .work .box-container .box .content {
   height: 100%;
