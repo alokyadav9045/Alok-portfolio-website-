@@ -38,19 +38,22 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+   emailjs.init("AoRsY8ySPiFc7EiEp"); // Replace with your Public Key
 
-    emailjs.sendForm('service_odxyazb', 'your_template_id', '#contact-form')
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert("Form Submitted Successfully!");
-            document.getElementById("contact-form").reset(); // Reset form fields
-        }, function(error) {
-            console.log('FAILED...', error);
-            alert("Form Submission Failed! Try Again.");
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_g2t2gxk', 'template_9w7ia8l', '#contact-form')
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert("Email Sent Successfully!");
+                    document.getElementById("contact-form").reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert("Failed to Send Email. Try Again!");
+                });
         });
-});
+
 
     // <!-- emailjs to mail contact form data -->
 
