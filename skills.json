@@ -50,10 +50,7 @@
         "name": "Python",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
     },
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-    },
+    
     {
         "name": "MongoDB",
         "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
