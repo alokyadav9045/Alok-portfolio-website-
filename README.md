@@ -1,461 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Alok Yadav portfolio," />
-    <meta name="description" content="Welcome to Alok's Portfolio. Full-Stack Web Developer" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio| Alok yadav</title>
-</head>
-<body>
-
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo"> Alok</a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-
-
-<!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-    <h2>Hi There,<br/> I'm Alok <span>Yadav</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/alok-yadav-906920292" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/alokyadav9045" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="https://t.me/Alok904" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/raoalok_0001"><i class="fab fa-instagram" target="_blank"></i></a></li>
-
-        </ul>
-      </div>
-    </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/img1.webp" alt="">
-</div>
-</section>
-<!-- hero section ends -->
-
-
-<!-- about section starts -->
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
-
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/gfg.jpg" alt="profile">
-    </div>
-    <div class="content">
-        <h3>I'm Alok Yadav</h3>
-        <span class="tag">MERN Stack Developer</span>
-        <p>I am a MERN Stack Developer based in bareilly, India. 
-          I am very passionate about improving my coding skills & developing applications & websites.
-          I build WebApps and Websites using MERN Stack.
-          Working for myself to improve my skills.
-          Love to build Full-Stack clones. </p>
-        
-        <div class="box-container">
-            <div class="box">
-              <p><span> Age: </span> 20</p>
-              <p><span> Phone : </span> +91 6395707468</p>
-            </div>
-            <div class="box">
-              <p><span> Email : </span> alokyadav83956@gmail.com</p>
-              <p><span> Place : </span> Bareilly , India -234001</p>
-            </div>
-        </div>
-        
-      <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1Yh2apZ7QrFoTcP8ksIhHDywr-zlER-iV/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-
-    </div>
-    </div>
-</section>
-<!-- about section ends -->
+# 🌐 Alok Yadav - Personal Portfolio
 
-<!-- skills section starts -->
-<section class="skills" id="skills">
+Welcome to my personal portfolio website! I’m a passionate **MERN Stack Developer** from Bareilly, India. I build Full Stack applications and love exploring new technologies and solving real-world problems through code.
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+---
 
-  <div class="container">
-    <div class="row" id="skillsContainer">
+## 🔗 Live Portfolio
+**🌍 Website:** [Visit Portfolio](https://alokyadavportfolio.netlify.app/)
 
-      <!-- Skill List Start -->
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"/><span>ReactJS</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/nextjs.png"/><span>Next.js</span></div></div>
+## 📇 About Me
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/nodejs.png"/><span>NodeJS</span></div></div>
+- **Name:** Alok Yadav
+- **Age:** 20
+- **Phone:** +91 6395707468
+- **Email:** alokyadav83956@gmail.com
+- **Location:** Bareilly, India - 234001
+- **Role:** MERN Stack Developer
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/fluency/48/000000/node-js.png"/><span>ExpressJS</span></div></div>
+> I’m passionate about improving my coding skills and building Web Applications & Websites. I love building Full-Stack projects and exploring the world of modern JavaScript frameworks.
 
+📄 [View Resume](https://drive.google.com/file/d/1Yh2apZ7QrFoTcP8ksIhHDywr-zlER-iV/view?usp=drive_link)
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/mongodb.png"/><span>MongoDB</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/mysql-logo.png"/><span>MySQL</span></div></div>
+## 💻 Skills & Technologies
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/firebase.png"/><span>Firebase</span></div></div>
+- **Frontend:** ReactJS, Next.js, HTML5, CSS3, TailwindCSS, Bootstrap, JavaScript, TypeScript
+- **Backend:** NodeJS, ExpressJS
+- **Database:** MongoDB, MySQL, Firebase
+- **Cloud & DevOps:** AWS
+- **Languages:** Java, Python
+- **Version Control:** Git, GitHub
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/amazon-web-services.png"/><span>AWS</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/><span>HTML5</span></div></div>
+## 🎓 Education
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/css3.png"/><span>CSS3</span></div></div>
+### Bachelor's in Computer Application  
+📍 Invertis University, Bareilly  
+📆 2023 – 2026 | _Pursuing_
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/><span>JavaScript</span></div></div>
+### High School & Intermediate  
+📍 Baba International School (CBSE)  
+📆 2021, 2023 | _Completed_
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/typescript.png"/><span>TypeScript</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"/><span>TailwindCSS</span></div></div>
+## 💼 Projects
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/><span>Bootstrap</span></div></div>
+### 🔸 [SkyScapes - Weather Application](https://skyscapes.netlify.app/)
+A real-time weather application with speech features and live weather data.  
+📁 [Source Code](https://github.com/alokyadav9045/weather-applicaton-react.git)
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"/><span>Java</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/><span>Python</span></div></div>
+### 🔸 [XpertSwap - Skill Exchange Platform](https://xpertswap.com/)
+A platform where users exchange skills and grow together through collaboration.  
+📁 [Source Code](https://github.com/alokyadav9045/)
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/git.png"/><span>Git VCS</span></div></div>
+---
 
-      <div class="bar"><div class="info"><img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png"/><span>GitHub</span></div></div>
+### 🔸 [Authentication System](https://auth-mern-application.vercel.app/login)
+Basic auth system with secure login and signup functionalities.  
+📁 [Source Code](https://github.com/alokyadav9045/Auth-Mern-app.git)
 
+---
 
-      <!-- Skill List End -->
+### 🔸 [Portfolio Website Template](https://alokyadavportfolio.netlify.app/)
+Clean and modern portfolio template built with HTML, CSS, and JavaScript.  
+📁 [Source Code](https://github.com/alokyadav9045/Alok-portfolio-website-.git)
 
-    </div>
-  </div>
+---
 
-</section>
-
-<!-- skills section ends -->
-
-
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/collage.png" alt="">
-        </div>
-        <div class="content">
-        <h3>Bachelor's in computer Application </h3>
-        <p>Invertis university , Bareilly , Uttar pradesh</p>
-        <h4>2023-2026 | Pursuing</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/baba international school.png" alt="">
-      </div>
-      <div class="content">
-      <h3>Highschool and Intermediate </h3>
-      <p> Baba international School | CBSE</p>
-      <h4>2021 , 2023 | Completed</h4>
-      </div>
-    </div>
-
-</div>
-</section>
-<!-- education section ends -->
-
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-<div class="box-container">
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/new.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Skyscapes- Weather Apllication</h3>
-        </div>
-        <div class="desc">
-          <p>A Weather Application is a software tool that provides real-time weather updates by speaking itself....</p>
-          <div class="btns">
-            <a href="https://github.com/alokyadav9045/weather-applicaton-react.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-            <a href="https://skyscapes.netlify.app/" class="btn" target="_blank">View <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/xpert.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>XpertSwap - Skill Exchange platform</h3>
-        </div>
-        <div class="desc">
-          <p>Connecting People Through Skill Exchange
-            XpertSwap is a platform where learners and professionals exchange skills with each other to grow together!</p>
-          <div class="btns">
-            <a href="https://github.com/alokyadav9045/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-            <a href="https://xpertswap.com/" class="btn" target="_blank">View <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="box-container">
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/login.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Authentication System</h3>
-        </div>
-        <div class="desc">
-          <p>Login and Signup pages!</p>
-          <div class="btns">
-            <a href="https://github.com/alokyadav9045/Auth-Mern-app.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-            <a href="https://auth-mern-application.vercel.app/login" class="btn" target="_blank">View <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/active.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio template</h3>
-        </div>
-        <div class="desc">
-          <p> "This Project Portfolio Template is a comprehensive, customizable tool designed to help individuals and organizations effectively manage and showcase their project work.!</p>
-          <div class="btns">
-            <a href="https://github.com/alokyadav9045/Alok-portfolio-website-.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-            <a href="https://alokyadavportfolio.netlify.app/" class="btn" target="_blank">View <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-<div class="viewall">
-  <a href="projects/index.html" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
-
-</section>
-<!-- work project section ends -->
-
-<!-- experience section starts -->
-<section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>NullClass</h2>
-        </div>
-        <div class="desc">
-            <h3>Mern Stack Developer</h3>
-            <p>Jan 2025 - March 2025 </p>
-        </div>
-      </div>
-    </div>
-
-   <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Unstop Innovation Challenge</h2>
-        </div>
-        <div class="desc">
-          <h3>Certified Participant | Full Stack & AI</h3>
-          <p>2024</p>
-        </div>
-      </div>
-    </div>
-      <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Codec Technologies India </h2>
-        </div>
-        <div class="desc">
-            <h3>Full-stack Developer</h3>
-            <p> Dec 2024 - Jan 2025</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="morebtn">
-    <a href="experience/index.html" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
-</section>
-<!-- experience section ends -->
-
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
-<!-- contact section ends -->
-
-
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Alok's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 9389848494</p>
-          <p> <i class="fas fa-envelope"></i>alokyadav83956@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Bareilly, India-234001</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/alok-yadav-906920292" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/alokyadav9045" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:alokyadav83956@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://t.me/Alok904" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
-          </div>
-      </div>
-  </div>
-
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/alok-yadav-906920292"> Alok Yadav</a></h1>
-
-</section>
-<!-- footer section ends -->
-
-
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./assets/js/script.js"></script>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/67af010a825083258e14fdcd/1ik1po4gm';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-</body>
-</html>
+## 🏆 Experience
+
+### 🔹 NullClass  
+**Role:** MERN Stack Developer  
+🗓️ Jan 2025 – Mar 2025
+
+### 🔹 Unstop Innovation Challenge  
+**Role:** Certified Participant - Full Stack & AI  
+🗓️ 2024
+
+### 🔹 Codec Technologies India  
+**Role:** Full Stack Developer  
+🗓️ Dec 2024 – Jan 2025
+
+---
+
+## 📞 Contact
+
+📧 **Email:** [alokyadav83956@gmail.com](mailto:alokyadav83956@gmail.com)  
+📍 **Location:** Bareilly, Uttar Pradesh, India
+
+### 🌐 Connect With Me
+
+- [LinkedIn](https://www.linkedin.com/in/alok-yadav-906920292)
+- [GitHub](https://github.com/alokyadav9045)
+- [Telegram](https://t.me/Alok904)
+- [Instagram](https://www.instagram.com/raoalok_0001)
+
+---
+
+## 🙏 Acknowledgement
+
+Thanks for visiting my portfolio! Feel free to connect with me on social platforms or reach out via email. Let’s build something amazing together 🚀
+
+---
+
+## 🛠️ Tech Stack Used
+
+- **HTML/CSS/JS**
+- **Font Awesome Icons**
+- **Typed.js**, **Vanilla Tilt.js**, **Particles.js**, **ScrollReveal.js**
+- **Tawk.to Live Chat Integration**
+
+---
+
+_Designed with ❤️ by [Alok Yadav](https://www.linkedin.com/in/alok-yadav-906920292)_
