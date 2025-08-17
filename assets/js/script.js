@@ -38,12 +38,12 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-   emailjs.init("AoRsY8ySPiFc7EiEp"); // Replace with your Public Key
+   emailjs.init("r9-t85ViUGExx-hc4"); // Replace with your Public Key
 
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            emailjs.sendForm('service_g2t2gxk', 'template_9w7ia8l', '#contact-form')
+            emailjs.sendForm('service_r2gspm1', 'template_9w7ia8l', '#contact-form')
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Email Sent Successfully!");
