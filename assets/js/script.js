@@ -38,21 +38,27 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-   emailjs.init("r9-t85ViUGExx-hc4"); // Replace with your Public Key
+   // Initialize EmailJS
+(function() {
+  emailjs.init({
+    publicKey: "r9-t85ViUGExx-hc4" // ✅ Replace with your Public Key
+  });
+})();
 
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+// Handle form submission
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-            emailjs.sendForm('service_r2gspm1', 'template_9w7ia8l', '#contact-form')
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    alert("Email Sent Successfully!");
-                    document.getElementById("contact-form").reset();
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    alert("Failed to Send Email. Try Again!");
-                });
-        });
+  emailjs.sendForm("service_r2gspm1", "template_9w7ia8l", "#contact-form")
+    .then(function(response) {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("✅ Email Sent Successfully!");
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      console.error("FAILED...", error);
+      alert("❌ Failed to Send Email. Please try again!");
+    });
+});
 
 
     // <!-- emailjs to mail contact form data -->
