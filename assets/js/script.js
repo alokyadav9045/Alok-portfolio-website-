@@ -288,19 +288,6 @@ if (isMobile) {
 // <!-- tilt js effect ends -->
 
 
-// pre loader start
-function loader() {
-    const loaderContainer = document.querySelector('.loader-container');
-    if (loaderContainer) {
-        loaderContainer.classList.add('fade-out');
-    }
-}
-function fadeOut() {
-    setInterval(loader, 300);
-}
-window.onload = fadeOut;
-// pre loader end
-
 // disable developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
