@@ -244,9 +244,47 @@ fetchData("projects").then(data => {
 });
 
 // <!-- tilt js effect starts -->
+// Check if device is mobile to optimize performance
+const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
+    max: isMobile ? 8 : 15,  // Reduce tilt intensity on mobile
+    speed: isMobile ? 200 : 400,  // Slower animation on mobile
+    glare: !isMobile,  // Disable glare effect on mobile for better performance
+    "max-glare": 0.2,
+    scale: isMobile ? 1.02 : 1.05,  // Subtle scale on mobile
 });
+
+// Enhanced mobile touch interactions for project cards
+if (isMobile) {
+    const projectBoxes = document.querySelectorAll('.work .box');
+    
+    projectBoxes.forEach(box => {
+        let touchStarted = false;
+        
+        // Handle touch start
+        box.addEventListener('touchstart', function(e) {
+            touchStarted = true;
+            this.classList.add('mobile-active');
+        }, { passive: true });
+        
+        // Handle touch end
+        box.addEventListener('touchend', function(e) {
+            if (touchStarted) {
+                setTimeout(() => {
+                    this.classList.remove('mobile-active');
+                }, 300);
+            }
+            touchStarted = false;
+        }, { passive: true });
+        
+        // Handle touch cancel
+        box.addEventListener('touchcancel', function(e) {
+            this.classList.remove('mobile-active');
+            touchStarted = false;
+        }, { passive: true });
+    });
+}
 // <!-- tilt js effect ends -->
 
 
