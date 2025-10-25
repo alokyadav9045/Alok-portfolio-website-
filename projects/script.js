@@ -30,61 +30,13 @@ document.addEventListener('visibilitychange',
     });
 
 
-// fetch projects start
-function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
-}
+// fetch projects start - REMOVED JSON loading, using static HTML instead
 
-
-function showProjects(projects) {
-    let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
-    projects.forEach(project => {
-        projectsHTML += `
-        <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="main/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>`
-    });
-    projectsContainer.innerHTML = projectsHTML;
-
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
-
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
-
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
-
+// Initialize isotope filter for existing HTML projects
+$(document).ready(function() {
     // isotope filter products
     var $grid = $('.box-container').isotope({
-        itemSelector: '.grid-item',
+        itemSelector: '.box',
         layoutMode: 'fitRows',
         masonry: {
             columnWidth: 200
@@ -98,11 +50,12 @@ function showProjects(projects) {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
-}
 
-getProjects().then(data => {
-    showProjects(data);
-})
+    // vanilla tilt.js
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 20,
+    });
+});
 // fetch projects end
 
 // Start of Tawk.to Live Chat

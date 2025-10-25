@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./event-detail.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='favicon' rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-png">
+
+    <title>AI Day Lucknow | Portfolio Alok Yadav</title>
+</head>
+<body>
+
+<!-- navbar starts -->
+<header>
+        <a href="../../" class="logo"> Alok</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="../../index.html#home">Home</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#skills">Skills</a></li>
+            <li><a href="../../index.html#education">Education</a></li>
+            <li><a href="../../index.html#work">Projects</a></li>
+            <li><a href="../../index.html#experience">Experience</a></li>
+            <li><a href="../../index.html#gallery">Events</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- event detail section starts -->
+<section class="event-detail" id="event-detail">
+
+  <!-- Event Header -->
+  <div class="event-header">
+    <div class="event-title">
+      <h1><i class="fas fa-brain"></i> AI Day Lucknow</h1>
+      <div class="event-meta">
+        <span><i class="fas fa-calendar"></i> October 2024</span>
+        <span><i class="fas fa-map-marker-alt"></i> Lucknow, India</span>
+        <span><i class="fas fa-brain"></i> AI & ML Conference</span>
+        <span><i class="fas fa-users"></i> 500+ Attendees</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Description -->
+  <div class="event-description">
+    <h2>About the Event</h2>
+    <p>AI Day Lucknow was a premier artificial intelligence conference that brought together industry experts, researchers, and enthusiasts to explore the latest advancements in AI and machine learning. The event featured cutting-edge presentations, hands-on workshops, and networking opportunities with leaders in the AI community.</p>
+    
+    <div class="highlights">
+      <h3>Event Highlights</h3>
+      <ul>
+        <li><strong>Keynote Speakers:</strong> Industry leaders from top tech companies</li>
+        <li><strong>Workshop Sessions:</strong> Hands-on AI/ML implementation workshops</li>
+        <li><strong>Technology Focus:</strong> Deep Learning, NLP, Computer Vision, and Generative AI</li>
+        <li><strong>Networking:</strong> Connect with AI researchers and professionals</li>
+        <li><strong>Live Demos:</strong> Real-world AI applications and use cases</li>
+        <li><strong>Panel Discussions:</strong> Future of AI and ethical considerations</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h3>My Experience</h3>
+      <p>Attending AI Day Lucknow was an incredible opportunity to dive deep into the world of artificial intelligence. The conference provided insights into the latest AI trends, practical implementation strategies, and real-world applications across various industries.</p>
+      
+      <div class="achievements">
+        <h4>Key Takeaways:</h4>
+        <ul>
+          <li>Learned about advanced neural network architectures and their applications</li>
+          <li>Participated in hands-on workshops on machine learning model deployment</li>
+          <li>Networked with AI researchers and industry professionals</li>
+          <li>Gained insights into ethical AI development and responsible AI practices</li>
+          <li>Explored emerging trends in generative AI and large language models</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auto-scrolling Photo Gallery -->
+  <div class="photo-gallery">
+    <h2>Event Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-wrapper">
+        <div class="gallery-track" id="galleryTrack">
+          <!-- Photos will be loaded dynamically -->
+        </div>
+      </div>
+      <div class="gallery-controls">
+        <button class="control-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="control-btn" id="playPauseBtn"><i class="fas fa-pause"></i></button>
+        <button class="control-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="gallery-indicators" id="galleryIndicators">
+        <!-- Indicators will be added dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Technical Details -->
+  <div class="technical-details">
+    <h2>Topics Covered</h2>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+        <p>Advanced ML algorithms, supervised and unsupervised learning techniques</p>
+      </div>
+      <div class="tech-card">
+        <h3><i class="fas fa-eye"></i> Computer Vision</h3>
+        <p>Image processing, object detection, and neural network architectures for vision</p>
+      </div>
+      <div class="tech-card">
+        <h3><i class="fas fa-comments"></i> Natural Language Processing</h3>
+        <p>Text analysis, sentiment analysis, and language model implementations</p>
+      </div>
+      <div class="tech-card">
+        <h3><i class="fas fa-robot"></i> Generative AI</h3>
+        <p>Large language models, GANs, and creative AI applications</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back Button -->
+  <div class="backbtn">
+    <a href="../index.html" class="btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back to Events</span>
+    </a>
+  </div>
+
+</section>
+<!-- event detail section ends -->
+
+<!-- modal for full-screen image view -->
+<div id="image-modal" class="image-modal" aria-hidden="true">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <div class="modal-content">
+    <img src="" alt="" />
+    <div class="modal-caption"></div>
+  </div>
+  <button class="modal-prev" aria-label="Previous">&#10094;</button>
+  <button class="modal-next" aria-label="Next">&#10095;</button>
+</div>
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="box-container">
+      <div class="box">
+          <h3>Alok's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="../../index.html#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="../../index.html#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="../../index.html#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="../../index.html#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="../../index.html#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="../../index.html#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>alokyadav@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Bareilly, India-243122</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/alokyadav" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/alokyadav9045" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:alokyadav@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://twitter.com/alokyadav" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/alokyadav" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/alokyadav"> Alok Yadav</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+<script src="./event-detail.js"></script>
+
+</body>
+</html>
