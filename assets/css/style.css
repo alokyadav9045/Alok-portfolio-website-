@@ -747,6 +747,7 @@ header .navbar ul li a:hover {
 .work {
   /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
+  padding-bottom: 4rem;
 }
 .work h2 {
   color: #fff;
@@ -759,7 +760,7 @@ header .navbar ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
 }
 .work .box-container .box {
   flex: 1 1 35rem;
@@ -888,9 +889,12 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .work {
+    padding-bottom: 3rem;
+  }
   .work .box-container {
     gap: 1.5rem;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -936,9 +940,12 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width: 450px) {
+  .work {
+    padding-bottom: 2.5rem;
+  }
   .work .box-container {
     gap: 1.2rem;
-    margin: 1rem;
+    margin: 1rem 1rem 0.5rem 1rem;
     max-width: 92%;
     margin-left: auto;
     margin-right: auto;
@@ -988,6 +995,9 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width: 380px) {
+  .work {
+    padding-bottom: 2rem;
+  }
   .work .box-container {
     margin: 0.8rem;
     gap: 1rem;

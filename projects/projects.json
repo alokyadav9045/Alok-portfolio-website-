@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Hospital Analytics",
+    "desc": "A comprehensive analytics platform for hospital management with data visualization and reporting features.",
+    "image": "new",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Xpert Solutions",
+    "desc": "Expert consultancy platform providing specialized solutions for business automation and digital transformation.",
+    "image": "xpert",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Network Monitor",
+    "desc": "Real-time network monitoring solution with advanced analytics and alert systems for IT infrastructure.",
+    "image": "network",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Velaste Platform",
+    "desc": "Modern e-commerce platform with advanced features for online retail and digital marketplace management.",
+    "image": "velaste",
+    "category": "web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]

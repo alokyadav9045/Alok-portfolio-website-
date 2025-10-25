@@ -196,7 +196,7 @@ function showProjects(projects) {
     }
     
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "basicweb").forEach(project => {
+    projects.slice(0, 4).filter(project => project.category != "basicweb").forEach(project => {
         projectHTML += `
         <div class="box tilt">
       <img draggable="false" src="./assets/images/projects/${project.image}.png" alt="project" />
@@ -464,6 +464,12 @@ srtop.reveal('.gallery .box', { interval: 200 });
             this.progressBar = null;
             this.progressInterval = null;
             
+            // Validate required elements exist
+            if (!this.imageSlider || !this.images.length) {
+                console.warn('CardImageSlider: Missing required elements or images');
+                return;
+            }
+            
             this.init();
         }
         
@@ -525,6 +531,8 @@ srtop.reveal('.gallery .box', { interval: 200 });
         }
         
         createProgressBar() {
+            if (!this.imageSlider) return;
+            
             this.progressBar = document.createElement('div');
             this.progressBar.className = 'progress-bar';
             this.progressBar.style.width = '0%';
@@ -539,33 +547,43 @@ srtop.reveal('.gallery .box', { interval: 200 });
             const nextIndex = (this.currentIndex + 1) % this.images.length;
             const nextImg = this.imageSlider.children[nextIndex];
             
+            // Add null checks to prevent errors
+            if (!currentImg || !nextImg) {
+                this.isSliding = false;
+                return;
+            }
+            
             // Prepare next image
             nextImg.style.transform = 'translateX(100%)';
             nextImg.style.opacity = '0';
             
             // Trigger transition
             setTimeout(() => {
-                currentImg.classList.remove('active');
-                currentImg.classList.add('prev');
-                
-                nextImg.classList.add('active');
-                nextImg.style.transform = 'translateX(0)';
-                nextImg.style.opacity = '1';
-                
-                this.currentIndex = nextIndex;
+                if (currentImg && nextImg) {
+                    currentImg.classList.remove('active');
+                    currentImg.classList.add('prev');
+                    
+                    nextImg.classList.add('active');
+                    nextImg.style.transform = 'translateX(0)';
+                    nextImg.style.opacity = '1';
+                    
+                    this.currentIndex = nextIndex;
+                }
             }, 50);
             
             // Clean up after transition
             setTimeout(() => {
-                currentImg.classList.remove('prev');
-                currentImg.style.transform = 'translateX(-100%)';
-                currentImg.style.opacity = '0';
+                if (currentImg) {
+                    currentImg.classList.remove('prev');
+                    currentImg.style.transform = 'translateX(-100%)';
+                    currentImg.style.opacity = '0';
+                }
                 this.isSliding = false;
             }, 850);
         }
         
         startAutoSlide() {
-            if (this.images.length <= 1) return;
+            if (this.images.length <= 1 || !this.imageSlider) return;
             
             this.stopAutoSlide();
             this.startProgressAnimation();
